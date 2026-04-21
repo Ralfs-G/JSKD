@@ -1,0 +1,140 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    color: #333;
+}
+
+/* Main container */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Input section */
+input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102,126,234,0.5);
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+/* Add button */
+button:first-of-type {
+    background: #667eea;
+    color: white;
+}
+
+button:first-of-type:hover {
+    background: #5a67d8;
+}
+
+/* Task list */
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+/* Task item */
+li {
+    background: #f7f7f7;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s;
+}
+
+li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Task text */
+li span {
+    flex: 1;
+}
+
+/* Done state */
+li.done span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Buttons inside task */
+li button {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+/* Different buttons */
+li button:nth-child(2) {
+    background: #48bb78;
+    color: white;
+}
+
+li button:nth-child(2):hover {
+    background: #38a169;
+}
+
+li button:nth-child(3) {
+    background: #ed8936;
+    color: white;
+}
+
+li button:nth-child(3):hover {
+    background: #dd6b20;
+}
+
+li button:nth-child(4) {
+    background: #f56565;
+    color: white;
+}
+
+li button:nth-child(4):hover {
+    background: #e53e3e;
+}
